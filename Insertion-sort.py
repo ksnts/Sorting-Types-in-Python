@@ -8,9 +8,9 @@ def insertion_sort(array):
     #function for getting every element in the array to be compared
     for i in length:
         #left value is the value in the left that would be compared to its right index
-        left_value = array[i]
+        right_value = array[i]
         #comparison while loop with swapping if the left index is greater that its right
-        while array[i-1] > left_value and i>0:
+        while array[i-1] > right_value and i>0:
             array[i], array[i-1] = array[i-1], array[i]
             i = i-1
 
